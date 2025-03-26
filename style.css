@@ -1,0 +1,66 @@
+/* General styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  .navbar nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  .navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Main content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content section {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout: Media queries */
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .content section {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .navbar nav ul {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
